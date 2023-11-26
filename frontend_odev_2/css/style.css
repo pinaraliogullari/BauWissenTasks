@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+
+.navbar,
+#footer,
+#main {
+
+    background-color: #687EFF;
+
+}
+
+#form {
+    background-color: #80B3FF;
+}
+
+#main {
+
+    height: 440px;
+}
+
+
+.navbar a {
+
+    transition-duration: .3s;
+}
+
+
+.img-cover {
+    object-fit: cover;
+    width: 100%;
+
+
+}
+
+.marginSet {
+    margin-top: 400px;
+    
+}
