@@ -1,0 +1,41 @@
+body {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    font-size: 10px;
+}
+
+#title {
+    font-size: 7.5rem;
+}
+
+#display {
+    font-size: 9.5rem;
+}
+
+#minus-button,
+#plus-button {
+    width: 4rem;
+    height: 4rem;
+}
+
+#reset-button {
+    width: 8rem;
+    height: 4rem;
+    font-size: 1.8rem;
+}
+
+button i {
+    font-size: 2rem;
+
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
