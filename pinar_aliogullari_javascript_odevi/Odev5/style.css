@@ -1,0 +1,91 @@
+body {
+    height: 100vh;
+    background-image: url(/image/numbers.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+
+.box {
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+#title h2 {
+    font-size: 36px;
+    color: orange;
+}
+
+#hearts {
+    text-align: end;
+    font-size: 25px;
+}
+
+#text {
+    text-align: start;
+    font-size: 18px;
+    color: #333;
+}
+
+#number {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid grey;
+    height: 30px;
+    padding-left: 10px;
+}
+
+#guess-button {
+    width: 100%;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#again-button {
+    width: 100%;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#result {
+    text-align: start;
+    font-size: 18px;
+    color: #333;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.orange {
+    color: orangered;
+}
+
+.score {
+    text-align: start;
+
+}
+#score-button{ 
+ background-color: rgb(173, 141, 203);
+ border: none;
+ color: #fff;
+ border-radius: 3px;
+ font-size: 18px;
+ font-weight: bold;
+}
