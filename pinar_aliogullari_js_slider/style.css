@@ -13,36 +13,40 @@ body {
 }
 
 .image-box {
-
     position: relative;
+    overflow: hidden;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 400px;
     height: 250px;
     /* background-color: darkblue; */
+    border-radius: 10px;
+}
+
+.image-slider {
+
+    display: flex;
+    transition: transform .4s; /*kayma efekti*/
 
 }
 
 .image {
     width: 100%;
     height: 100%;
-    opacity: 0;
-    position: absolute;
+    opacity: 1;
     /* top: 50%;
-    left: 50%; */
+  left: 50%; */
     /* transform: translate(-50%, -50%); */
     border: none;
     border-radius: 10px;
-    overflow: hidden;
-    transition-duration: .4s;
+
 }
 
-
-
+/* 
 .active {
-    opacity: 1;
-}
+  opacity: 1;
+} */
 
 button {
     background-color: transparent;
@@ -66,7 +70,7 @@ button:hover {
 
     position: absolute;
     top: 50%;
-    left: 29.5%;
+    left: 2%;
     transform: translate(0, -50%);
 
 
@@ -75,7 +79,7 @@ button:hover {
 #button-right {
     position: absolute;
     top: 50%;
-    left: 68.5%;
+    left: 93%;
     transform: translate(0, -50%);
 
 
