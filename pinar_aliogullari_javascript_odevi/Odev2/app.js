@@ -5,6 +5,6 @@ Burada kullanıcının sadece sayısal değerler gireceğini farzedin. Ayrıca s
  */
 
 let inputValue = prompt("Lütfen 100'den büyük bir sayı giriniz.");
-while (inputValue != null &&  parseInt(inputValue) <= 100  ) {
+while (inputValue != null &&  parseInt(inputValue) < 100  ) {
     inputValue = prompt("Lütfen tekrar deneyiniz.")
 }

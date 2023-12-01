@@ -13,11 +13,11 @@ console.log("********************************************************")
 let beseBolunenler = sayilar.filter((sayi) => sayi % 5 == 0);
 console.log(`sayilar dizisi icerisindeki 5'e bölünen sayilar: ${beseBolunenler.join("-")}`);
 
-console.log("********************************************************")
+console.log("********************************************************");
 
 
 //3- sayilar listesindeki çift sayıların toplamını bulunuz.
-let total = 0
+let total = 0;
 let ciftSayilar = sayilar.filter((sayi) => sayi % 2 == 0);
 ciftSayilar.forEach(cift => {
     total += cift;
@@ -25,7 +25,8 @@ ciftSayilar.forEach(cift => {
 
 console.log(`sayilar dizisi icerisindeki cift sayilar: ${ciftSayilar.join("-")} ve toplamlari: ${total}`);
 
-console.log("********************************************************")
+console.log("********************************************************");
+
 
 let urunler = ["iphone 12", "samsung s22", "iphone 13", "samsung s23", "samsung s20"];
 
@@ -34,16 +35,16 @@ console.log("Dizi içindeki elemanların büyük harfli versiyonu:");
 urunler.forEach(urun => {
     console.log(urun.toUpperCase());
 });
-console.log("********************************************************")
+console.log("********************************************************");
 
 
 //5- urunler listesinde samsung geçen kaç ürün vardır?
 
-let samsung = urunler.filter((urun) => urun.toLowerCase().includes("samsung"))
+let samsung = urunler.filter((urun) => urun.toLowerCase().includes("samsung"));
 let count = samsung.length;
 
 
-console.log(`urunler dizisi icerisinde  adında "samsung" gecen ${count} adet urun vardir.`);
+console.log(`urunler dizisi icerisinde,adında "samsung" gecen ${count} adet urun vardir.`);
 
 console.log("********************************************************")
 
@@ -70,7 +71,7 @@ function getAverage(notlar) {
 ogrenciler.forEach(ogrenci => {
     totalNotes = 0;
     averageNotes = getAverage(ogrenci.notlar).toFixed(2);
-    result = averageNotes <= 50 ? "basarisiz" : averageNotes >= 60 && averageNotes <= 70 ? "normal" : "basarili"
+    result = averageNotes <= 50 ? "basarisiz" : averageNotes >= 60 && averageNotes <= 70 ? "orta düzey" : "basarili";
     console.log(`${ogrenci.ad} ${ogrenci.soyad} - not ortalamasi : ${averageNotes}  -basari durumu: ${result}`);
     allAverage += parseFloat(averageNotes);
 
@@ -81,5 +82,5 @@ ogrenciler.forEach(ogrenci => {
 
 //7- tüm öğrencilerin not ortalaması kaçtır?
 
-gno = allAverage / ogrenciler.length
+gno = allAverage / ogrenciler.length;
 console.log(`Tüm ögrencilerin not ortalamasi: ${gno.toFixed(2)}`);

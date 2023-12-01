@@ -9,8 +9,9 @@ let score = 0;
 let guesButton = document.getElementById("guess-button");
 let againButton = document.getElementById("again-button");
 let scoreButton = document.getElementById("score-button");
-
 let result = document.getElementById("result");
+
+
 function getRandomNumber() {
     return Math.floor(Math.random() * 5) + 1;
 }
@@ -64,6 +65,7 @@ againButton.addEventListener("click", function () {
     againButton.classList.add("hide");
     againButton.classList.remove("show");
     document.getElementById("number").value = "";
-    result.innerHTML = ""
+    result.innerHTML = "";
 
 })
+

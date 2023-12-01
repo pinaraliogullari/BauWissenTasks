@@ -19,11 +19,11 @@ let lessonName = "Fullstack Web Developer Eğitimi";
 
 //urlnin karakter sayısı
 let urlLetterCount = url.length;
-console.log(`Url'deki karakter sayısı: ${urlLetterCount}`);
+console.log(`Url ${urlLetterCount} karakterden oluşmaktadır.`);
 
 // ders adının kelime sayısı
 let wordCount = (lessonName.split(" ")).length;
-console.log(`Ders adındaki kelime sayısı: ${wordCount}`);
+console.log(`Ders adı ${wordCount} kelimeden oluşmaktadır. `);
 
 //url https ile başlıyor mu?
 let hasHttps = url.includes("https");
@@ -41,7 +41,7 @@ console.log(`Ders adı içinde "Eğitimi" kelimesi bulunmaktadır. Ve index numa
 //https://www.wissenakademie.com/fullstack-web-gelistirme-egitimi
 
 let indexAndQuot =url.indexOf("&");
-let sliceUrl= url.slice(0,30);
+let sliceUrl = url.slice(0, indexAndQuot);
 
 let lessonNameReplace=(lessonName.replace("Developer", "Gelistirme")).replace("ğ","g");
 let lessonNameLower = lessonNameReplace.toLowerCase();

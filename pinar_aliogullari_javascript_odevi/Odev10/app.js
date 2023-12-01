@@ -57,6 +57,7 @@ const siparis2 = {
     }
 };
 
+
 let totalSeperate = 0;
 let total = 0;
 const getTotalSeperate = siparis => {
@@ -74,8 +75,8 @@ const getTotal = (siparis1, siparis2) => {
 
 }
 
-console.log(`Sipariş 1'in toplam tutarı: ${getTotalSeperate(siparis1)} TL`);
-console.log(`Sipariş 2'nin toplam tutarı: ${getTotalSeperate(siparis2)} TL`);
-console.log(`Tüm siparişlerin toplam tutarı: ${getTotal(siparis1, siparis2)} TL`);
+console.log(`Sipariş 1'in toplam tutarı(KDV dahil): ${getTotalSeperate(siparis1)} TL`);
+console.log(`Sipariş 2'nin toplam tutarı(KDV dahil): ${getTotalSeperate(siparis2)} TL`);
+console.log(`Tüm siparişlerin toplam tutarı(KDV dahil): ${getTotal(siparis1, siparis2)} TL`);
 
 
